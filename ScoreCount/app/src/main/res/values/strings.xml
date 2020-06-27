@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Score</string>
+    <string name="_1">+ 1 point</string>
+    <string name="_2">+ 2 point</string>
+    <string name="_3">+ 3 point</string>
+    <string name="reset">reset</string>
+    <string name="_0">0</string>
+
+</resources>
