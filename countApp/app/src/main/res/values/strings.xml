@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">countApp</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="reset">0</string>
+    <string name="toast">Toast</string>
+</resources>

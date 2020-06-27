@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/displayCnt"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.82"
+        android:text="0"
+        android:textSize="80sp"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.18"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:text="@string/plus"
+            android:textSize="30sp"
+            android:onClick="plus"
+            android:background="#4CAF50"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:text="@string/minus"
+            android:textSize="30sp"
+            android:onClick="minus"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="#F44336"/>
+        <Button
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:text="@string/reset"
+            android:textSize="30sp"
+            android:onClick="reset"
+            android:padding="2dp"
+            android:background="#3F51B5"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:text="@string/toast"
+            android:textSize="20sp"
+            android:onClick="toast"
+            android:padding="2dp"
+            android:background="#FF9800"/>
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
