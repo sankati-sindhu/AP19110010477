@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/grey"
+    android:gravity="bottom|center"
+    android:paddingBottom="160dp"
+    android:paddingHorizontal="50dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+
+        android:textSize="25sp"
+        android:layout_marginBottom="100dp"
+        android:textColor="@color/white"/>
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/username"
+        android:textColorHint="@color/lightWhite"
+        android:background="@color/darkgrey"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/password"
+        android:textColorHint="@color/lightWhite"
+        android:background="@color/darkgrey"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:textColor="@color/white" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_background"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:layout_margin="20dp"
+        android:onClick="welcome"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New to app? Register here."
+        android:textColor="@color/white"
+        android:onClick="register"/>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

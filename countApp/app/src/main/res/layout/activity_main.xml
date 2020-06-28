@@ -11,13 +11,15 @@
 
     <TextView
         android:id="@+id/displayCnt"
+        android:background="@color/colorPrimaryDark"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.82"
+        android:layout_margin="10dp"
         android:text="0"
         android:textSize="80sp"
         android:gravity="center"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/text"
 
         />
 
@@ -25,17 +27,16 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.18"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.25"
-            android:layout_marginLeft="3dp"
-            android:layout_marginRight="3dp"
             android:text="@string/plus"
             android:textSize="30sp"
             android:onClick="plus"
-            android:background="#4CAF50"/>
+            android:background="@drawable/my_button_bg"/>
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -43,32 +44,27 @@
             android:text="@string/minus"
             android:textSize="30sp"
             android:onClick="minus"
-            android:layout_marginLeft="3dp"
-            android:layout_marginRight="3dp"
-            android:background="#F44336"/>
+            android:background="@drawable/my_button_bg"/>
         <Button
 
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.25"
-            android:layout_marginLeft="3dp"
-            android:layout_marginRight="3dp"
             android:text="@string/reset"
             android:textSize="30sp"
             android:onClick="reset"
             android:padding="2dp"
-            android:background="#3F51B5"/>
+            android:background="@drawable/my_button_bg"/>
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.25"
-            android:layout_marginLeft="3dp"
-            android:layout_marginRight="3dp"
             android:text="@string/toast"
             android:textSize="20sp"
             android:onClick="toast"
             android:padding="2dp"
-            android:background="#FF9800"/>
+            android:background="@drawable/my_button_bg"/>
+        />
     </LinearLayout>
 
 </androidx.appcompat.widget.LinearLayoutCompat>

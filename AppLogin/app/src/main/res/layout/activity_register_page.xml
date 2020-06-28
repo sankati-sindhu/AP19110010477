@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".registerPage"
+    android:background="@color/grey"
+    android:gravity="bottom|center"
+    android:paddingBottom="160dp"
+    android:paddingHorizontal="50dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textSize="25sp"
+        android:layout_marginBottom="50dp"
+        android:textColor="@color/white"/>
+    <EditText
+        android:id="@+id/registerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/username"
+        android:textColorHint="@color/lightWhite"
+        android:background="@color/darkgrey"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/registerEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/email"
+        android:textColorHint="@color/lightWhite"
+        android:background="@color/darkgrey"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:textColor="@color/white" />
+    <EditText
+        android:id="@+id/registerPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/password"
+        android:textColorHint="@color/lightWhite"
+        android:background="@color/darkgrey"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:textColor="@color/white" />
+    <EditText
+        android:id="@+id/registerrePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Confirm Password"
+        android:textColorHint="@color/lightWhite"
+        android:background="@color/darkgrey"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:textColor="@color/white" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_background"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:layout_margin="20dp"
+        android:onClick="register"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already a member? Login."
+        android:textColor="@color/white"
+        android:onClick="login"/>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

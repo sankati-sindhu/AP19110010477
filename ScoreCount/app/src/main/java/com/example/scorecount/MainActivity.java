@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import static com.example.scorecount.R.layout.activity_main;
+
 public class MainActivity extends AppCompatActivity {
     Button aPoint1, aPoint2, aPoint3, bPoint1, bPoint2, bPoint3, reset;
     TextView aScore, bScore;
@@ -14,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(activity_main);
         aScore = findViewById(R.id.aScore);
         bScore = findViewById(R.id.bScore);
         aPoint1 = findViewById(R.id.aPoint1);
