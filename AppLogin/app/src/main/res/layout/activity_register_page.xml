@@ -1,88 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayoutCompat2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".registerPage"
     android:background="@color/grey"
     android:gravity="bottom|center"
-    android:paddingBottom="160dp"
-    android:paddingHorizontal="50dp">
+    android:paddingHorizontal="50dp"
+    tools:context=".registerPage">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Sign Up"
+        android:gravity="left"
+        android:textColor="@color/white"
         android:textSize="25sp"
-        android:layout_marginBottom="50dp"
-        android:textColor="@color/white"/>
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/registerName"
+        app:layout_constraintEnd_toEndOf="@+id/registerName"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/registerName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
     <EditText
         android:id="@+id/registerName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="@string/username"
-        android:textColorHint="@color/lightWhite"
         android:background="@color/darkgrey"
+        android:ems="10"
+        android:hint="@string/username"
+        android:inputType="textPersonName"
         android:padding="10dp"
-        android:layout_margin="5dp"
-        android:textColor="@color/white"/>
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/lightWhite"
+        app:layout_constraintBottom_toTopOf="@+id/registerEmail"
+        app:layout_constraintEnd_toEndOf="@+id/registerEmail"
+        app:layout_constraintStart_toStartOf="@+id/registerEmail"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <EditText
         android:id="@+id/registerEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/darkgrey"
         android:ems="10"
         android:hint="@string/email"
-        android:textColorHint="@color/lightWhite"
-        android:background="@color/darkgrey"
         android:padding="10dp"
-        android:layout_margin="5dp"
-        android:textColor="@color/white" />
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/lightWhite"
+        app:layout_constraintBottom_toTopOf="@+id/registerPassword"
+        app:layout_constraintEnd_toEndOf="@+id/registerPassword"
+        app:layout_constraintStart_toStartOf="@+id/registerPassword"
+        app:layout_constraintTop_toBottomOf="@+id/registerName" />
+
     <EditText
         android:id="@+id/registerPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:hint="@string/password"
-        android:textColorHint="@color/lightWhite"
         android:background="@color/darkgrey"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
         android:padding="10dp"
-        android:layout_margin="5dp"
-        android:textColor="@color/white" />
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/lightWhite"
+        app:layout_constraintBottom_toTopOf="@+id/registerrePassword"
+        app:layout_constraintEnd_toEndOf="@+id/registerrePassword"
+        app:layout_constraintStart_toStartOf="@+id/registerrePassword"
+        app:layout_constraintTop_toBottomOf="@+id/registerEmail" />
+
     <EditText
         android:id="@+id/registerrePassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:hint="Confirm Password"
-        android:textColorHint="@color/lightWhite"
         android:background="@color/darkgrey"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
         android:padding="10dp"
-        android:layout_margin="5dp"
-        android:textColor="@color/white" />
+        android:layout_marginBottom="24dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/lightWhite"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/registerPassword" />
+
     <Button
-        android:layout_width="match_parent"
+        android:id="@+id/button2"
+        android:layout_width="272dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/my_background"
+        android:onClick="register"
+        android:padding="10dp"
         android:text="Register"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        android:padding="10dp"
-        android:layout_margin="20dp"
-        android:onClick="register"/>
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+
+        app:layout_constraintHorizontal_bias="0.613"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/registerrePassword" />
+
     <TextView
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Already a member? Login."
+        android:onClick="login"
+        android:text="Already a member to this app? Login."
         android:textColor="@color/white"
-        android:onClick="login"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.752"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
 
 
-
-</androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>
