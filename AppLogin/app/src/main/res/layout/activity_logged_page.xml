@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoggedPage"
-    android:background="@color/colorPrimary">
+    android:background="@drawable/bgrad">
     <TextView
         android:id="@+id/textview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
         android:textSize="40sp"
-        android:textColor="@color/white"/>
+        android:textColor="@color/colorAccent"/>
 </LinearLayout>
