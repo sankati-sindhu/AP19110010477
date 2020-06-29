@@ -1,12 +1,177 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     tools:context=".MainActivity"
     android:background="@color/background">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/aPoint1"
+                android:layout_margin="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.25"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/_1"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+            <Button
+                android:id="@+id/aPoint2"
+                android:layout_margin="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.25"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/_2"
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+            <Button
+                android:id="@+id/aPoint3"
+                android:layout_margin="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.25"
+                android:background="@color/colorPrimaryDark"
+                android:text="@string/_3"
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+            <Button
+                android:id="@+id/reset"
+                android:layout_margin="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.25"
+                android:background="@color/backgroundDark"
+                android:text="@string/reset"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.4"
+                android:layout_marginTop="30dp"
+                android:text="Team A"
+                android:gravity="center|bottom"
+                android:textSize="28sp"
+                android:textColor="@color/colorPrimaryDark"
+                tools:ignore="NestedWeights" />
+            <TextView
+                android:id="@+id/aScore"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.6"
+                android:text="@string/_0"
+                android:gravity="center|top"
+                android:textSize="40sp"
+                android:textColor="@color/black"
+                tools:ignore="NestedWeights" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary2"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.4"
+                android:layout_marginTop="30dp"
+                android:text="Team B"
+                android:gravity="center|bottom"
+                android:textSize="28sp"
+                android:textColor="@color/colorPrimaryDark2"
+                tools:ignore="NestedWeights" />
+            <TextView
+                android:id="@+id/bScore"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.6"
+                android:text="@string/_0"
+                android:gravity="center|top"
+                android:textSize="40sp"
+                android:textColor="@color/black"
+                tools:ignore="NestedWeights" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/bPoint1"
+                android:layout_margin="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.25"
+                android:background="@color/colorPrimaryDark2"
+                android:text="@string/_1"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+            <Button
+                android:id="@+id/bPoint2"
+                android:layout_margin="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.25"
+                android:background="@color/colorPrimaryDark2"
+                android:text="@string/_2"
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+            <Button
+                android:id="@+id/bPoint3"
+                android:layout_margin="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.25"
+                android:background="@color/colorPrimaryDark2"
+                android:text="@string/_3"
+                android:textColor="@color/white"
+                android:textSize="15sp"/>
+
+            <Button
+                android:layout_margin="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.25"
+                android:background="@color/backgroundDark"
+                android:text="@string/reset"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 
-</androidx.appcompat.widget.LinearLayoutCompat>
+</LinearLayout>
