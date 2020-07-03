@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimaryDark"
+    android:paddingHorizontal="40dp"
+    android:orientation="vertical"
+    tools:context=".DetailsActivity">
+    <TextView
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        style="@style/mainHeadings"
+        android:layout_weight="0.2"
+        android:text="User Details"
+        android:gravity="center_horizontal|bottom"
+        android:layout_marginBottom="24dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="0.6"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+                <TextView
+                    style="@style/headings"
+                    android:text="@string/RollNo"
+                    android:layout_weight="0.3"/>
+                <TextView
+                    android:id="@+id/rollNo"
+                    style="@style/sectionText"
+                    android:text="@string/nth"
+                    android:layout_weight="0.7"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/headings"
+                android:text="@string/Name"
+                android:layout_weight="0.3"/>
+            <TextView
+                android:id="@+id/name"
+                style="@style/sectionText"
+                android:text="@string/nth"
+                android:layout_weight="0.7"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/headings"
+                android:text="@string/Phone"
+                android:layout_weight="0.3"/>
+            <TextView
+                android:id="@+id/phone"
+                style="@style/sectionText"
+                android:text="@string/nth"
+                android:layout_weight="0.7"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/headings"
+                android:text="@string/email"
+                android:layout_weight="0.3"/>
+            <TextView
+                android:id="@+id/email"
+                style="@style/sectionText"
+                android:text="@string/nth"
+                android:layout_weight="0.7"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/headings"
+                android:text="@string/password"
+                android:layout_weight="0.3"/>
+            <TextView
+                android:id="@+id/editTextTextPassword"
+                style="@style/sectionText"
+                android:text="@string/nth"
+                android:layout_weight="0.7"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/headings"
+                android:text="@string/gender"
+                android:layout_weight="0.3"/>
+            <TextView
+                android:id="@+id/gender"
+                style="@style/sectionText"
+                android:text="@string/nth"
+                android:layout_weight="0.7"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/headings"
+                android:text="@string/branch"
+                android:layout_weight="0.3"/>
+            <TextView
+                android:id="@+id/branch"
+                style="@style/sectionText"
+                android:text="@string/nth"
+                android:layout_weight="0.7"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/button_prim"
+            android:text="change" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

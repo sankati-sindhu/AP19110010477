@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayoutCompat2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:paddingHorizontal="40dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/mainHeadings"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:text="@string/registration_form"
+        android:gravity="center_horizontal|bottom"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="0.6"
+        android:gravity="center">
+        <EditText
+            android:id="@+id/rollNo"
+            style="@style/textFields"
+            android:hint="@string/RollNo"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/name"
+            style="@style/textFields"
+            android:hint="@string/Name"
+            android:inputType="textPersonName"/>
+        <EditText
+            android:id="@+id/phone"
+            style="@style/textFields"
+            android:hint="@string/Phone"
+            android:inputType="phone"/>
+
+        <EditText
+            android:id="@+id/email"
+            style="@style/textFields"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" />
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            style="@style/textFields"
+            android:hint="@string/password"
+            android:inputType="textPassword"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/headings"
+                android:text="@string/gender"
+                android:layout_weight="0.25"/>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/male"
+                    android:text="@string/male"
+                    style="@style/radioCust" />
+                <RadioButton
+                    android:id="@+id/female"
+                    style="@style/radioCust"
+                    android:text="@string/female" />
+                <RadioButton
+                    android:id="@+id/other"
+                    style="@style/radioCust"
+                    android:text="@string/other" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/headings"
+                android:text="@string/branch"
+                android:layout_weight="0.25"/>
+            <Spinner
+                android:id="@+id/branch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2">
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/button_prim"
+            android:text="@string/submit"
+            android:onClick="submit"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
