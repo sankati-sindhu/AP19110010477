@@ -7,11 +7,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="62aa1d10-64a0-4026-b62d-ab5621fa6e6a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../AppLogin/app/src/main/res/drawable/bgrad.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ScoreCount/app/src/main/res/layout-land/activity_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout-land/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AppLogin/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AppLogin/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../AppLogin/app/src/main/res/layout/activity_logged_page.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AppLogin/app/src/main/res/layout/activity_logged_page.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExplicitIntent/app/src/main/java/com/example/explicitintent/SecondActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExplicitIntent/app/src/main/res/layout/activity_second.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../contextMenu/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../contextMenu/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../contextMenu/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../contextMenu/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../contextMenu/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../contextMenu/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../contextMenu/app/src/androidTest/java/com/example/contextmenu/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../contextMenu/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../contextMenu/app/src/main/java/com/example/contextmenu/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../contextMenu/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../contextMenu/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../contextMenu/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../contextMenu/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../contextMenu/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../contextMenu/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../contextMenu/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../contextMenu/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../contextMenu/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../contextMenu/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../contextMenu/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../contextMenu/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../contextMenu/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../contextMenu/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../contextMenu/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../contextMenu/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../contextMenu/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../contextMenu/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../contextMenu/app/src/test/java/com/example/contextmenu/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../contextMenu/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../contextMenu/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../contextMenu/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../contextMenu/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../contextMenu/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../contextMenu/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../contextMenu/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExplicitIntent/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ExplicitIntent/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExplicitIntent/app/src/main/java/com/example/explicitintent/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ExplicitIntent/app/src/main/java/com/example/explicitintent/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExplicitIntent/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ExplicitIntent/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExplicitIntent/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ExplicitIntent/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScoreCount/app/src/main/java/com/example/scorecount/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ScoreCount/app/src/main/java/com/example/scorecount/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -145,10 +183,30 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="308" y="212" key="AndroidCreateResourceFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1593407982066" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1593884872481">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1593884872481" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1593884872480">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1593884872480" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1593884872477">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1593884872477" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1593884872481">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1593884872481" />
     <state x="496" y="235" key="chooseDestDirectoryDialog" timestamp="1593345899058">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="496" y="235" key="chooseDestDirectoryDialog/0.0.1440.900@0.0.1440.900" timestamp="1593345899058" />
+    <state x="390" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1594182857303">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="390" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1594182857303" />
     <state x="473" y="184" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1593345899099">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

@@ -1,7 +1,9 @@
 package com.example.scorecount;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -16,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(activity_main);
         aScore = findViewById(R.id.aScore);
         bScore = findViewById(R.id.bScore);
@@ -77,6 +80,16 @@ public class MainActivity extends AppCompatActivity {
                 bScore.setText(""+bCount);
             }
         });
+        if (savedInstanceState!=null) {
+            String s = savedInstanceState.getString("akey");
+            assert s != null;
+            aCount = Integer.parseInt(s);
+        }
+    }
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putString("akey",aScore.getText().toString());
 
 
     }
