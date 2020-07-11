@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Covid19India</string>
+    <string name="activeHeading">Active</string>
+    <string name="recoveredHeading">Recovered</string>
+    <string name="deceasedHeading">Deceased</string>
+    <string name="defaultCaseCount">0</string>
+</resources>

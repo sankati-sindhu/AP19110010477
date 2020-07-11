@@ -1,0 +1,48 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="ThemeOverlay.AppCompat.Dark">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.NoActionbar" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds" tools:ignore="NewApi">true</item>
+    </style>
+
+    <style name="headings">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_weight">0.3</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center|bottom</item>
+
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">sans-serif-medium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="data">
+        <!--<item name="android:fontFamily" tools:targetApi="jelly_bean"></item>-->
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_weight">0.3</item>
+        <item name="android:gravity">center|top</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:elevation" tools:ignore="NewApi">10dp</item>
+       <item name="android:textSize">24sp</item>
+
+    </style>
+
+    <style name="button_regular">
+        <item name="android:layout_marginLeft">@dimen/margin_regular</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:layout_marginStart">@dimen/margin_regular</item>
+    </style>
+
+</resources>

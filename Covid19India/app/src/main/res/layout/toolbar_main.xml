@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="@dimen/toolbar_height_regular"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="horizontal"
+    android:elevation="6dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.6"
+        android:layout_marginHorizontal="@dimen/margin_regular"
+        android:text="COVID - 19 DATA"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textSize="15sp"
+        android:textColor="@color/colorAccent"
+        android:padding="@dimen/padding_regular"
+        android:paddingHorizontal="@dimen/padding_regular"
+        android:gravity="center|left"
+        android:textStyle="bold"/>
+
+
+    <ImageButton
+        android:id="@+id/search"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.13"
+        style="@style/button_regular"
+        app:srcCompat="@drawable/search"
+        tools:ignore="VectorDrawableCompat"
+        android:onClick="StartSearch"/>
+
+    <ImageButton
+        android:id="@+id/chart"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.13"
+        app:srcCompat="@drawable/chart"
+        tools:ignore="VectorDrawableCompat"
+        style="@style/button_regular" />
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="0dp"
+        android:layout_marginLeft="@dimen/margin_regular"
+        android:layout_height="match_parent"
+        android:layout_weight="0.14"
+        android:layout_marginStart="@dimen/margin_regular" />
+
+
+</LinearLayout>

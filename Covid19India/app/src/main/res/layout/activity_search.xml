@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    tools:context=".SearchActivity"
+    android:background="@color/colorPrimaryDark">
+
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.1"
+        style="@style/button_regular"
+        app:srcCompat="@drawable/back"
+        tools:ignore="VectorDrawableCompat"/>
+
+    <EditText
+        android:id="@+id/editTextSearchCountry"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"
+        android:layout_margin="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="@dimen/padding_regular"
+        android:text="Search"
+        android:background="@drawable/border_round"
+        android:textColor="@color/colorAccent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"/>
+
+    <ImageButton
+        android:id="@+id/searchSubmit"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.1"
+        app:srcCompat="@drawable/search"
+        style="@style/button_regular"
+        android:onClick="SearchSubmit"
+        tools:ignore="VectorDrawableCompat" />
+
+
+</LinearLayout>
