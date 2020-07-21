@@ -1,25 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <style name="cardTextCustom">
-        <item name="android:layout_width">0dp</item>
-        <item name="fontFamily">serif</item>
-        <item name="android:paddingLeft">6dp</item>
-        <item name="android:layout_height">match_parent</item>
-        <item name="android:layout_marginBottom">4dp</item>
-        <item name="android:layout_marginTop">4dp</item>
 
-    </style>
-    <style name="subheadings" parent="cardTextCustom">
-        <item name="android:background"><![CDATA[@drawable/border_left_only]]></item>
-        <item name="android:layout_weight">0.35</item>
-        <item name="android:textSize">18sp</item>
-
-    </style>
-    <style name="details" parent="cardTextCustom">
-        <item name="android:layout_weight">0.65</item>
-        <item name="android:textSize">18sp</item>
-        <item name="android:textStyle">bold</item>
-    </style>
 
     <style name="radioCust" parent="Widget.AppCompat.CompoundButton.RadioButton">
         <item name="android:layout_height">wrap_content</item>
@@ -33,10 +14,49 @@
         <item name="android:background">@drawable/border_left_only</item>
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:padding">10dp</item>
-        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:paddingLeft">10dp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textSize">14sp</item>
     </style>
+
+    <style name="TextThemeCustom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginLeft">14dp</item>
+        <item name="android:layout_marginRight">14dp</item>
+        <item name="borderWidth">4dp</item>
+        <item name="android:background">@drawable/border_left_only</item>
+        <!-- <item name="android:backgroundTint" tools:targetApi="lollipop">@color/colorSecondaryVariant</item>-->
+    </style>
+
+    <style name="layoutLinearStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginLeft">14dp</item>
+        <item name="android:layout_marginEnd" tools:targetApi="jelly_bean_mr1">14dp</item>
+        <item name="android:layout_marginStart">14dp</item>
+    </style>
+
+    <style name="subheadings" parent="TextThemeCustom">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:background"><![CDATA[@drawable/border_left_only]]></item>
+        <item name="android:layout_weight">0.33</item>
+    </style>
+
+    <style name="details" parent="TextThemeCustom">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">0.67</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
 
 </resources>

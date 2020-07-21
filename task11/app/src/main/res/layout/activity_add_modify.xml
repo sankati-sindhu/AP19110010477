@@ -2,55 +2,50 @@
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
+    android:padding="10dp"
     tools:context=".AddModify">
 
   <LinearLayout
+      android:layout_marginTop="40dp"
+      android:layout_marginBottom="40dp"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:orientation="vertical">
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Edit Details"
+          android:textAppearance="@style/TextAppearance.AppCompat.Title"
+          android:gravity="center"
+          android:layout_margin="14dp"
+          android:padding="10dp"/>
 
-      <com.google.android.material.textfield.TextInputLayout
-
+      <EditText
+          android:id="@+id/nameET"
           android:hint="@string/contact_name"
-          style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Custom">
-          <com.google.android.material.textfield.TextInputEditText
-              android:id="@+id/nameET"
-              style="@style/EditText" />
-      </com.google.android.material.textfield.TextInputLayout>
+          style="@style/TextThemeCustom" />
 
-      <com.google.android.material.textfield.TextInputLayout
+      <EditText
+          android:id="@+id/mailET"
           android:hint="@string/mail_id"
-          style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Custom">
-          <com.google.android.material.textfield.TextInputEditText
-              android:id="@+id/mailET"
-              style="@style/EditText" />
-      </com.google.android.material.textfield.TextInputLayout>
-
-      <com.google.android.material.textfield.TextInputLayout
+          android:inputType="textEmailAddress"
+          style="@style/TextThemeCustom" />
+      <EditText
+          android:id="@+id/phoneET"
+          android:inputType="phone"
           android:hint="@string/contact_phone"
-          style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Custom">
-          <com.google.android.material.textfield.TextInputEditText
-              android:id="@+id/phoneET"
-              style="@style/EditText" />
-      </com.google.android.material.textfield.TextInputLayout>
-
-      <com.google.android.material.textfield.TextInputLayout
+          style="@style/TextThemeCustom" />
+      <EditText
+          android:id="@+id/addressET"
           android:hint="@string/address"
-          style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Custom">
-          <com.google.android.material.textfield.TextInputEditText
-              android:id="@+id/addressET"
-              style="@style/EditText" />
-      </com.google.android.material.textfield.TextInputLayout>
-
+          android:inputType="textLongMessage"
+          style="@style/TextThemeCustom" />
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_margin="12dp">
+        style="@style/layoutLinearStyle"
+        android:layout_marginBottom="6dp">
 
         <TextView
             style="@style/headings"
@@ -62,11 +57,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.6"/>
     </LinearLayout>
-      <LinearLayout
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:orientation="horizontal"
-          android:layout_margin="12dp">
+     <LinearLayout
+          style="@style/layoutLinearStyle">
 
           <TextView
               style="@style/headings"
@@ -93,11 +85,8 @@
 
       </LinearLayout>
 
-      <LinearLayout
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:orientation="horizontal"
-          android:layout_margin="12dp">
+      <LinearLayout style="@style/layoutLinearStyle">
+
 
           <TextView
               style="@style/headings"
@@ -120,15 +109,28 @@
 
       </LinearLayout>
 
-      <Button
-          android:layout_gravity="right"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_margin="10dp"
-          android:text="Save"
-          android:onClick="save"/>
+      <LinearLayout
+          style="@style/layoutLinearStyle"
+          android:layout_marginBottom="14dp"
+          android:gravity="end">
 
+          <com.google.android.material.button.MaterialButton
+              android:id="@+id/save"
+              style="@style/Widget.MaterialComponents.Button"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:onClick="save"
+              android:text="SAVE" />
 
+          <com.google.android.material.button.MaterialButton
+              android:id="@+id/cancel"
+              style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:onClick="cancel"
+              android:text="cancel" />
+      </LinearLayout>
 
 
   </LinearLayout>
