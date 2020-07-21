@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="330dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    android:layout_margin="4dp"
+    app:cardUseCompatPadding="true"
+    tools:targetApi="lollipop">
+    <LinearLayout
+
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.12"
+            android:orientation="horizontal">
+            <TextView
+
+
+                android:text="@string/contact_name"
+                style="@style/subheadings" />
+            <TextView
+                android:id="@+id/cardDetailsName"
+                style="@style/details" />
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.12"
+            android:orientation="horizontal">
+            <TextView
+                android:text="@string/mail_id"
+                style="@style/subheadings" />
+            <TextView
+
+                android:id="@+id/cardDetailsMailId"
+                style="@style/details" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.12"
+            android:orientation="horizontal">
+            <TextView
+                android:text="@string/contact_phone"
+                style="@style/subheadings" />
+            <TextView
+                android:id="@+id/cardDetailsPhoneNumber"
+                style="@style/details" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.12"
+            android:orientation="horizontal">
+            <TextView
+                android:text="@string/gender"
+                style="@style/subheadings" />
+            <TextView
+                android:id="@+id/cardDetailsGender"
+                style="@style/details" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.12"
+            android:orientation="horizontal">
+            <TextView
+                android:text="@string/department"
+                style="@style/subheadings" />
+            <TextView
+                android:id="@+id/cardDetailsDepartment"
+                style="@style/details" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.12"
+            android:orientation="horizontal">
+            <TextView
+                android:text="@string/languages"
+                style="@style/subheadings" />
+            <TextView
+                android:id="@+id/cardDetailsLanguages"
+                style="@style/details" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.12"
+            android:orientation="horizontal">
+            <TextView
+                android:text="@string/address"
+                style="@style/subheadings" />
+            <TextView
+                android:id="@+id/cardDetailsAddress"
+                style="@style/details" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.16"
+            android:orientation="horizontal">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/cardDetailsUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/update"
+                style="@style/Widget.MaterialComponents.Button"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/cardDetailsDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/delete"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

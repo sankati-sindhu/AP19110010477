@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".AddModify">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <com.google.android.material.textfield.TextInputLayout
+
+          android:hint="@string/contact_name"
+          style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Custom">
+          <com.google.android.material.textfield.TextInputEditText
+              android:id="@+id/nameET"
+              style="@style/EditText" />
+      </com.google.android.material.textfield.TextInputLayout>
+
+      <com.google.android.material.textfield.TextInputLayout
+          android:hint="@string/mail_id"
+          style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Custom">
+          <com.google.android.material.textfield.TextInputEditText
+              android:id="@+id/mailET"
+              style="@style/EditText" />
+      </com.google.android.material.textfield.TextInputLayout>
+
+      <com.google.android.material.textfield.TextInputLayout
+          android:hint="@string/contact_phone"
+          style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Custom">
+          <com.google.android.material.textfield.TextInputEditText
+              android:id="@+id/phoneET"
+              style="@style/EditText" />
+      </com.google.android.material.textfield.TextInputLayout>
+
+      <com.google.android.material.textfield.TextInputLayout
+          android:hint="@string/address"
+          style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Custom">
+          <com.google.android.material.textfield.TextInputEditText
+              android:id="@+id/addressET"
+              style="@style/EditText" />
+      </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="12dp">
+
+        <TextView
+            style="@style/headings"
+            android:text="@string/department"
+            android:layout_weight="0.4"/>
+        <Spinner
+            android:id="@+id/cardDetailsDepartment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"/>
+    </LinearLayout>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_margin="12dp">
+
+          <TextView
+              style="@style/headings"
+              android:text="@string/gender"
+              android:layout_weight="0.25"/>
+          <RadioGroup
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+              <RadioButton
+                  android:id="@+id/male"
+                  android:text="@string/male"
+                  style="@style/radioCust" />
+              <RadioButton
+                  android:id="@+id/female"
+                  style="@style/radioCust"
+                  android:text="@string/female" />
+              <RadioButton
+                  android:id="@+id/other"
+                  style="@style/radioCust"
+                  android:text="@string/other" />
+          </RadioGroup>
+
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_margin="12dp">
+
+          <TextView
+              style="@style/headings"
+              android:text="Languages"
+              android:layout_weight="0.25"/>
+
+              <CheckBox
+                  android:id="@+id/langTelugu"
+                  android:text="Telugu"
+                  style="@style/checkCust" />
+              <CheckBox
+                  android:id="@+id/langHindi"
+                  style="@style/checkCust"
+                  android:text="Hindi" />
+              <CheckBox
+                  android:id="@+id/langEnglish"
+                  style="@style/checkCust"
+                  android:text="English" />
+
+
+      </LinearLayout>
+
+      <Button
+          android:layout_gravity="right"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="10dp"
+          android:text="Save"
+          android:onClick="save"/>
+
+
+
+
+  </LinearLayout>
+
+
+</ScrollView>

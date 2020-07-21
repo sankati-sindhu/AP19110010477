@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="cardTextCustom">
+        <item name="android:layout_width">0dp</item>
+        <item name="fontFamily">serif</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+
+    </style>
+    <style name="subheadings" parent="cardTextCustom">
+        <item name="android:background"><![CDATA[@drawable/border_left_only]]></item>
+        <item name="android:layout_weight">0.35</item>
+        <item name="android:textSize">18sp</item>
+
+    </style>
+    <style name="details" parent="cardTextCustom">
+        <item name="android:layout_weight">0.65</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="radioCust" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+    <style name="checkCust" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+    <style name="headings">
+        <item name="android:background">@drawable/border_left_only</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+</resources>

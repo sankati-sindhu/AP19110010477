@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">task11</string>
+    <string name="contact_name">Name</string>
+    <string name="contact_phone">Phone</string>
+    <string name="gender">Gender</string>
+    <string name="department">Department</string>
+    <string name="languages">Languages</string>
+    <string name="address">Address</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="mail_id">Mail id</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="other">other</string>
+
+    <string-array name="department_list">
+        <item>CSE</item>
+        <item>ECE</item>
+        <item>EEE</item>
+        <item>Mech</item>
+        <item>Civil</item>
+        <item>IT</item>
+        <item>other</item>
+    </string-array>
+</resources>
